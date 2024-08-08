@@ -43,5 +43,5 @@ function login() {
         return;
     }
 
-    window.location.replace("/moedas.html");
+    window.location.replace("./moedas/moedas.html");
 }
