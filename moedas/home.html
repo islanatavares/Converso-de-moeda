@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Moeda Fácil - Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <form action="" name="converso">
+            
+            <h1>Conversão</h1>
+            <div>
+
+                <label for=""> Valor: </label>
+                <input type="number" class="valor" required>
+                
+                <!-- <label for="">Moeda de origem: </label> -->
+                
+                <select name="moedas" id="sel_origem">
+                    <option value="">Moeda de origem</option>
+                    <option  value="BRL">Real</option>
+                    <option  value="USD">Dolar</option>
+                    <option  value="EUR">Euro</option>
+                    <option  value="JPY">Japão</option>
+                    <option  value="GBP">Reino Unido</option>
+                    <option  value="CHF">Suíça</option>
+                    <option  value="CAD">Canadá</option>
+                    <option  value="AUD">Australia</option>
+                    <option  value="ZAR">África do Sul</option>
+                    <option  value="CNY">China</option>
+                    <option  value="ARS">Argentina</option>
+                </select>
+                
+                
+                <!-- <label for=""> Moeda de destino:</label> -->
+                <select name="moedas" id="sel_destino">
+                    <option value="">Moeda de destino</option>
+                    <option value="BRL">Real</option>
+                    <option value="USD">Dolar</option>
+                    <option value="EUR">Euro</option>
+                    <option value="JPY">Japão</option>
+                    <option value="GBP">Reino Unido</option>
+                    <option value="CHF">Suíça</option>
+                    <option value="CAD">Canadá</option>
+                    <option value="AUD">Australia</option>
+                    <option value="ZAR">África do Sul</option>
+                    <option value="CNY">China</option>
+                    <option value="ARS">Argentina</option>
+                </select>
+                <br><br>
+            </div>
+                
+                <input type="button" class="button" id="buttom" value="Converter"><br><br>
+
+                <div class="final">
+                    <label  for="">Resultado:</label>
+                    <input class="result" type="number" disabled>
+                    <label for="">Taxa de câmbio:</label>
+                    <input id="tax" type="number" disabled>
+                </div>
+            </form>
+            
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
