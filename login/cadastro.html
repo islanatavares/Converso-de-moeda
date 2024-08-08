@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moeda Fácil - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-username" placeholder="Usuário">
+            <input type="password" id="login-password" placeholder="Senha">
+            <button onclick="login()">Entrar</button>
+            <p id="pa">Não tem uma conta? <a href="#" onclick="showRegister()">Cadastre-se</a></p>
+        </div>
+
+        <div id="register-form" style="display: none;">
+            <h2>Cadastro</h2>
+            <input type="email" id="register-username" placeholder="Usuário">
+            <input type="password" id="register-password" placeholder="Senha">
+            <button onclick="register()">Cadastrar</button>
+            <p>Já tem uma conta? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
